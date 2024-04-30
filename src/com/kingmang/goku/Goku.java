@@ -3,6 +3,7 @@ package com.kingmang.goku;
 import com.kingmang.goku.utils.Log;
 import com.kingmang.goku.utils.Preprocessor;
 import com.kingmang.goku.utils.Response;
+import com.kingmang.goku.utils.StringFormator;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -78,8 +79,9 @@ public class Goku implements Serializable{
 
             raw = Preprocessor.preprocess(raw, changes);
 			Log.append("Preprocess: " + raw);
-            String response = Response.response(raw, markov);
-			System.out.println(response);
+            String response = StringFormator.formatLongString(Response.response(raw, markov));
+			System.out.println("Goku: " + response);
+
         }
     }
 
