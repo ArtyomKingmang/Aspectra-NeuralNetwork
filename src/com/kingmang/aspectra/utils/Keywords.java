@@ -1,4 +1,4 @@
-package com.kingmang.goku.utils;
+package com.kingmang.aspectra.utils;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
-package com.kingmang.goku.utils;
+package com.kingmang.aspectra.utils;
 
-import com.kingmang.goku.Markov;
+import com.kingmang.aspectra.Markov;
 
 import java.util.ArrayList;
 

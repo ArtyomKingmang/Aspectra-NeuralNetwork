@@ -1,6 +1,6 @@
-package com.kingmang.goku.utils;
+package com.kingmang.aspectra.utils;
 
-import com.kingmang.goku.Goku;
+import com.kingmang.aspectra.Aspectra;
 
 import java.io.*;
 
@@ -8,7 +8,7 @@ public class Serializer {
     private static ObjectOutputStream oos;
     private static ObjectInputStream ois;
 
-    public static void save(Goku obj, String filename){
+    public static void save(Aspectra obj, String filename){
       try {
           oos = new ObjectOutputStream(new FileOutputStream(filename));
           oos.writeObject(obj);
@@ -20,10 +20,10 @@ public class Serializer {
     }
 
     public static Object open(String filename) {
-        Goku obj;
+        Aspectra obj;
         try {
             ois = new ObjectInputStream(new FileInputStream(filename));
-            obj = (Goku) ois.readObject();
+            obj = (Aspectra) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

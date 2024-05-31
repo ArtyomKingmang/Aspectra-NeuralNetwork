@@ -1,4 +1,4 @@
-package com.kingmang.goku.exceptions;
+package com.kingmang.aspectra.exceptions;
 
 public class WordNotFoundException extends Exception {
     public WordNotFoundException(String message) {

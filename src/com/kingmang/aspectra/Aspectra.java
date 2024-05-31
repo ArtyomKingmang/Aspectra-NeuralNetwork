@@ -1,9 +1,9 @@
-package com.kingmang.goku;
+package com.kingmang.aspectra;
 
-import com.kingmang.goku.utils.Log;
-import com.kingmang.goku.utils.Preprocessor;
-import com.kingmang.goku.utils.Response;
-import com.kingmang.goku.utils.StringFormator;
+import com.kingmang.aspectra.utils.Log;
+import com.kingmang.aspectra.utils.Preprocessor;
+import com.kingmang.aspectra.utils.Response;
+import com.kingmang.aspectra.utils.StringFormator;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,9 +11,9 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import static com.kingmang.goku.utils.ChangeList.getChanges;
+import static com.kingmang.aspectra.utils.ChangeList.getChanges;
 
-public class Goku implements Serializable{
+public class Aspectra implements Serializable{
 	@Getter
 	@Setter
 	private static Scanner input;
@@ -78,9 +78,8 @@ public class Goku implements Serializable{
 			}
 
             raw = Preprocessor.preprocess(raw, changes);
-			Log.append("Preprocess: " + raw);
             String response = StringFormator.formatLongString(Response.response(raw, markov));
-			System.out.println("Goku: " + response);
+			System.out.println("Aspectra: " + response);
 
         }
     }

@@ -1,4 +1,4 @@
-package com.kingmang.goku.utils;
+package com.kingmang.aspectra.utils;
 
 public class StringFormator {
     public static String formatLongString(String inputString) {

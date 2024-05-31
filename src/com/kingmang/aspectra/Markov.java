@@ -1,7 +1,7 @@
-package com.kingmang.goku;
+package com.kingmang.aspectra;
 
-import com.kingmang.goku.exceptions.WordNotFoundException;
-import com.kingmang.goku.utils.Log;
+import com.kingmang.aspectra.exceptions.WordNotFoundException;
+import com.kingmang.aspectra.utils.Log;
 
 import java.io.BufferedReader;
 import java.io.File;

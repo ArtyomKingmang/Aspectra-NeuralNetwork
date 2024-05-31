@@ -1,4 +1,4 @@
-package com.kingmang.goku.utils;
+package com.kingmang.aspectra.utils;
 
 import java.util.HashMap;
 
